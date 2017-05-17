@@ -1,0 +1,293 @@
+.header-col{
+	display: flex;
+    align-items: center;
+    margin-top: 40px;
+     
+}
+
+.login {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.header-nav-col ul li a{
+	color: #000;
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+.header-nav-col ul li a:hover{
+	border-bottom: 4px solid #000;
+	padding-bottom: 14px;
+	color: #e9e7e7;
+}
+
+.menu-ham{
+	display: none;
+}
+
+.info, .info-name {
+	border-bottom: 1px solid #e9e7e7;
+}
+
+.info, .info-name, .info-question{
+	margin: 0 40px;
+}
+
+.info h1{
+	font-family: 'Playfair Display', sans-serif;
+	color: #000;
+}
+
+.info p{
+	font-size: 16px;
+	color: #4a4a4a;
+	font-family: 'Roboto', sans-serif;
+}
+.header-nav-col {
+	border-top: solid 1px #e9e7e7;
+	border-bottom: solid 1px #e9e7e7;
+}
+
+.header-nav-col ul{
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.header-nav-col ul li{
+	list-style: none;
+	margin-right: 10px;
+}
+
+.info-1 {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.info-2{
+	padding-top: 30px;
+	padding-bottom: 35px;
+	display: flex;
+	flex-direction: column;
+}
+
+.info-3{
+	padding-top: 25px;
+	padding-bottom: 35px;
+}
+
+.info-name .form-group label, .info-question .form-group label{
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight: 500;
+}
+
+.info-name .form-group small, .info-question small{
+	color: #9b9b9b;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+.info-name .form-group .form-control {
+    border-radius: 0px;
+    width: 80%;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.info-question .radio label{
+	font-size: 17px;
+	color: #4a4a4a;
+	font-weight: 400;
+	width: 100%
+}
+
+.radio input[type="radio"] {
+  position: absolute;
+  margin-left: 0;
+  opacity: 0;
+}
+
+.radio input[type="radio"] + .radio-label:before {
+  content: '';
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid #9b9b9b;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  position: relative;
+  top: -0.2em;
+  margin-right: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.radio input[type="text"]{
+	width: 69%;
+	height: 45px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.form-save{
+	background: #f9f9f9;
+	margin-top: 30px;
+}
+
+.info-4{
+	padding: 40px 100px;
+}
+
+.form-save .form-group {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.form-save .form-group .form-control {
+    width: 78%;
+    border-radius: 0px;
+    width: 80%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+
+}
+
+.form-save .btn-default {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #4abde2;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-left: 154px;
+    transition: all .3s;
+}
+
+.form-save .btn-default:hover {
+    background: #3ea0c0;
+}
+
+.footer-questions{
+	border-style: dotted;
+	border-color: #9b9b9b;
+	border-width: 2px;
+	padding: 25px 40px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.cols-footer h4{
+	color: #9b9b9b;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.button-footer{
+	border: solid 1px #4abde2;
+	border-radius: 20px;
+	padding: 10px 20px;
+	vertical-align: middle;
+	color: #4abde2;
+	transition: all .3s;
+}
+
+.button-footer:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #4abde2;;
+}
+
+@media screen and (max-width: 768px){
+	.header-col{
+		border-bottom: solid 1px #e9e7e7;
+		padding-bottom: 25px;
+	}
+
+	.menu-ham{
+		display: flex;
+    	justify-content: flex-end;
+	}
+
+	.login {
+		display: none;
+	}
+
+	.header-nav-col{
+		display: none;
+	}
+
+	.radio input[type="text"] {
+	    width: 100%;
+	}
+	
+	.form-save .form-group {
+    	align-items: flex-start;
+    	flex-direction: column;
+	}
+
+	.form-save .form-group .form-control {
+    	width: 100%;
+	}
+
+	.form-save .btn-default {
+	    width: 50%;
+	    display: block;
+	    margin: auto;
+	}
+
+	.info-4 {
+	    padding: 40px 55px;
+	}
+	.margin{
+		margin-bottom: 40px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.button-footer{
+		padding: 13px 35px;
+		display: block;
+		width: 100%;
+		margin: auto;
+	}
+	.cols-footer{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.form-save .btn-default {
+	    width: 100%;
+	}
+
+	.margin{
+		margin-bottom: 40px;
+		text-align: center;
+		width: 100%;
+	}
+}
